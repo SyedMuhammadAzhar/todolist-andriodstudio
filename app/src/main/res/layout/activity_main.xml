@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To Do List"
+        android:textSize="40sp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:textColor="#DA6B087C"
+        android:id="@+id/TVtitle"/>
+    <EditText
+        android:layout_width="@android:dimen/thumbnail_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVtitle"
+        android:hint="Enter list"
+        android:id="@+id/ETlistentry"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_toRightOf="@+id/ETlistentry"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/TVtitle"
+        android:id="@+id/BTN_add"/>
+
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETlistentry"
+        android:id="@+id/LV"/>
+
+
+
+
+
+</RelativeLayout>
